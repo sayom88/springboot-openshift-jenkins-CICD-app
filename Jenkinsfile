@@ -17,10 +17,10 @@ pipeline {
     }
     stage('Quality Check :: Sonarqube & JaCoCo') {
       steps {
-        sh "mvn sonar:sonar -Dsonar.host.url=https://sonar-sibsber1-in.osc-sbx-exp-ap-15768375-f72ef11f3ab089a8c677044eb28292cd-0001.us-east.containers.appdomain.cloud -Dsonar.login=admin -Dsonar.password=admin"
+        sh "mvn sonar:sonar -Dsonar.host.url=https://sonar-route-sayoghos-in-second.dc-ig-lib-ga-1589529604-f72ef11f3ab089a8c677044eb28292cd-0000.au-syd.containers.appdomain.cloud -Dsonar.login=admin -Dsonar.password=admin"
       }
     }
-    stage('Insatll App') {
+    stage('Install App') {
       steps {
         sh "mvn install"
       }
